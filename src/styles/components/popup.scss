@@ -1,0 +1,38 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-image: url(../images/section_1_bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  color: #fff;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  transform: translateX(100%);
+  transition: transform 0.4s;
+
+  &__close-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    
+    width: 40px;
+    height: 40px;
+    background-color: rgb(184, 119, 119);
+    cursor: pointer;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  &__text {
+    background-color: rgb(99, 89, 126);
+    padding: 20px;
+  }
+  
+  &__footer {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,51 @@
+.cashout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0 0 30px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+
+    @include onScreen {
+      gap: 10px;
+    }
+
+    @include onTablet {
+      flex-direction: column;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 62px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  &__logo--mc {
+    height: 37px;
+    width: 59px;
+    margin-right: 12px;
+  }
+
+  @include onScreen {
+    width: 220px;
+    height: 52px;
+  }
+}

@@ -1,0 +1,232 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+
+  &-top {
+    background-image: url(../images/section_1_bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    padding-top: 36px;
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+
+      @media (max-width: 565px) {
+        flex-direction: column;
+      }
+    }
+
+    &__app-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__image {
+
+      @include onScreen {
+        width: 335px;
+        height: 335px;
+      }
+
+      @include onTablet {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    &__title {
+      font-family: "Anton", sans-serif;
+      font-size: 72px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 106px;
+      letter-spacing: 0.1em;
+      margin: 0;
+
+      @include onScreen {
+        font-size: 52px;
+        line-height: 80px;
+      }
+
+      @include onTablet {
+        font-size: 42px;
+        line-height: 52px;
+      }
+
+      @include onMobile {
+        font-size: 36px;
+      }
+    }
+
+    &__subtitle {
+      font-family: "Inter", sans-serif;
+      font-size: 34px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 41px;
+      letter-spacing: 0.07em;
+      margin: 0 0 46px;
+
+      @include onScreen {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      @include onTablet {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0 0 32px;
+      }
+
+      @include onMobile {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 32px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    &__android-ver {
+      font-family: "Inter", sans-serif;
+      font-size: 19px;
+      font-weight: normal;
+      color: #fff;
+      text-align: center;
+      line-height: 23px;
+      transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+
+      @include onTablet {
+        font-size: 14px;
+      }
+    }
+
+    &__slogan {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 56px;
+      color: #fff;
+      width: 492px;
+      height: 56px;
+      background: linear-gradient(90deg, #00b0ff, #0726ce);
+      margin-bottom: 28px;
+
+      @include onScreen {
+        font-size: 28px;
+        line-height: 48px;
+        width: 410px;
+        height: 48px;
+      }
+      
+      @include onTablet {
+        font-size: 22px;
+        line-height: 34px;
+        width: 320px;
+        height: 34px;
+      }
+
+      @include onMobile {
+        font-size: 18px;
+        line-height: 30px;
+        width: 280px;
+        height: 30px;
+      }
+    }
+
+    &__button {
+      cursor: pointer;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 94px;
+      color: #fff;
+      width: 518px;
+      height: 94px;
+      background: linear-gradient(90deg, #ffc123, #fa4800);
+      box-shadow: 0 0 16px 1px #ffc123;
+      margin-bottom: 16px;
+
+      &:before {
+        content: "DOWNLOAD FOR FREE";
+      }
+
+      @include onScreen {
+        font-size: 24px;
+        width: 372px;
+        height: 74px;
+        line-height: 74px;
+      }
+
+      @include onTablet {
+        font-size: 22px;
+        width: 260px;
+        height: 64px;
+        line-height: 64px;
+
+        &:before {
+          content: "DOWNLOAD";
+        }
+
+        @include onMobile {
+          font-size: 18px;
+          height: 52px;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+
+    &__title {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      line-height: 36px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 40px 0 0;
+      margin: 0;
+
+      @include onScreen {
+        font-size: 24px;
+      }
+
+      @include onTablet {
+        padding: 18px 10px 0;
+      }
+
+      @include onMobile {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0;
+      }
+
+      &--accent {
+        color: #fa4800;
+      }
+
+      &--bold {
+        font-weight: 800;
+      }
+    }
+  }
+}

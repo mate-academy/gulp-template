@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./typography";
+@import "./utils/reset";
+@import "./utils/_mixins";
 
-body {
-  background: $c-gray;
-}
+@import "./components/popup.scss";
+@import "./components/sections.scss";
+@import "./components/footer.scss";
+@import "./components/logo.scss";
+@import "./components/figure.scss";
+@import "./components/services.scss";
+@import "./components//cashout.scss";

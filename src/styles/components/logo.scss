@@ -1,0 +1,15 @@
+.logo {
+  width: 416px;
+  height: 112px;
+  margin-bottom: 29px;
+
+  @include onTablet {
+    width: 292px;
+    height: 78px;
+  }
+
+  @include onMobile {
+    width: 208px;
+    height: 66px;
+  }
+}

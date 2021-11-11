@@ -1,3 +1,12 @@
-h1 {
-  @extend %h1;
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;900&display=swap");
+
+.title {
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fff, #cddcdf, #e0f9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  transform: matrix(0.98, 0, -0.21, 1, 0, 0);
+  padding: 0;
 }

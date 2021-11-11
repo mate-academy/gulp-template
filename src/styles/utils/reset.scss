@@ -1,0 +1,27 @@
+
+.page,
+.page__body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  background-color: #00053b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+}
