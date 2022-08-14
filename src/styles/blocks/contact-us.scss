@@ -1,0 +1,110 @@
+.contact-us {
+  background-color: #1b1b1b;
+  width: 100vw;
+
+  &__content {
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onMobile {
+      height: 400px;
+    }
+
+    @include onSmallScreen {
+      height: 300px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 200px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @include onSmallScreen {
+      margin-bottom: 30px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 300px;
+    min-height: 70px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 3px 0 0 3px;
+    color: #000;
+    border: 0;
+
+    &::placeholder {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 162%;
+
+      @include onSmallScreen {
+        font-size: 14px;
+      }
+
+      @include onSuperSmallScreen {
+        font-size: 13px;
+      }
+    }
+
+    @include onSmallScreen {
+      width: 200px;
+      min-height: 50px;
+    }
+
+    @include onSuperSmallScreen {
+      width: 150px;
+      min-height: 40px;
+    }
+  }
+
+  &__button {
+    background: $color-pink;
+    width: 150px;
+    display: flex;
+    min-height: 70px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162%;
+
+    padding: 0 22px;
+    border: 0;
+
+    @include onSmallScreen {
+      font-size: 14px;
+      width: 100px;
+      min-height: 50px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 13px;
+      width: 100px;
+      min-height: 40px;
+    }
+  }
+}

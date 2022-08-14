@@ -1,0 +1,112 @@
+.how-to-use {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-bottom: 160px;
+
+    @include onSmallScreen {
+      margin-bottom: 120px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.use-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @include onSmallScreen {
+    display: block;
+    text-align: center;
+  }
+
+  @include onSuperSmallScreen {
+    display: block;
+    text-align: center;
+  }
+
+  &--second {
+    @include onSmallScreen {
+      display: grid;
+      justify-content: center;
+    }
+
+    @include onSuperSmallScreen {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    margin-right: 180px;
+
+    @include onMobile {
+      margin-right: 120px;
+    }
+
+    @include onSmallScreen {
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+
+    &--second {
+      margin-right: 0;
+
+      @include onSmallScreen {
+        order: 1;
+      }
+
+      @include onSuperSmallScreen {
+        order: 1;
+      }
+    }
+  }
+
+  &__image-container {
+    &--second {
+      margin-right: 180px;
+
+      @include onMobile {
+        margin-right: 40px;
+      }
+
+      @include onSmallScreen {
+        margin: 0;
+        order: 2;
+      }
+    
+      @include onSuperSmallScreen {
+        margin-right: 0;
+        order: 2;
+      }
+    }
+
+    @include onMobile {
+      height: 350px;
+    }
+
+    @include onSmallScreen {
+      height: 300px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 270px;
+    }
+  }
+
+  &__image {
+    height: 100%;
+  }
+}

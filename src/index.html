@@ -1,13 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="./images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Richard</title>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__content content">
+        <div class="container">
+          <div class="header__top-actions top-actions">
+            <a href="#" class="top-actions__logo logo">
+              <img src="./images/logo.png" 
+                  alt="Logo" 
+                  class="logo-image">
+            </a>
+            <a href="#side-menu" class="icon icon--menu"></a>
+            
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#about" class="menu__item-link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#features" class="menu__item-link">Features</a>
+              </li>
+              <li class="menu__item">
+                <a href="#how-to-use" class="menu__item-link">How to use</a>
+              </li>
+              <li class="menu__item">
+                <a href="#download" class="menu__item-link">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-main-info">
+          <div class="container">
+            <div class="grid grid--desktop grid--center">     
+              <div class="grid__item grid__item--1-7">
+                <div class="header-main-info__user">
+                  <h1 class="header-main-info__title">
+                    Momentum
+                  </h1>
+                  <h2 class="header-main-info__subtitle">
+                    Launch your product — and savor the momentum.
+                  </h2>
+                  <a href="#" class="button">
+                    Get the App
+                  </a>
+                </div>
+              </div>
+              <div class="grid__item grid__item--8-12"> 
+                <img src="./images/header-image.svg" 
+                    alt="Header image" 
+                    class="header-main-info__image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="page__side-menu side-menu" id="side-menu">
+      <div class="container">
+        <div class="side-menu__content">
+          <div class="side-menu__top-actions top-actions top-actions--side-menu">
+            <a href="#" class="logo">
+              <img src="./images/logo.png" 
+                   alt="Logo" 
+                   class="logo-image logo-image--side-menu">
+            </a>
+            <a href = "#" 
+                class="top-actions__icon icon icon--cross"
+            ></a>
+          </div>
+        
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#about-us" class="side-menu__link">About</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#services" class="side-menu__link">Features</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#testimonials" class="side-menu__link">How to use</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#contact-us" class="side-menu__link">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="page__orders orders">
+      <div class="container">
+        <div class="orders__container">
+          <h4 class="subtitle">
+          Aenean Consectetur Porta
+          </h4>
+          <p class="subtitle subtitle--bold subtitle--white">
+            Nullam quis risus eget urna mollis <br>
+            ornare vel eu leo.
+          </p>
+          <div class="orders__container-image">
+            <img src="./images/black-screen-image.png" 
+                class="orders__image"
+                alt="Orders">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <section class="page__section how-to-use" id="how-to-use">
+      <div class="how-to-use__item use-item">
+        <div class="use-item__info">
+          <h4 class="subtitle">
+          Aenean Consectetur
+          </h4>
+          <h2 class="subtitle subtitle--bold">
+            Cay sociis nato <br>
+            que penatibus et
+          </h2>
+          <p class="subtitle subtitle--text">
+            Lorem ipsum dolor sit amet, consectetur <br> 
+            adipiscing elit. Suspendisse varius enim in <br>
+            eros elementum tristique.
+          </p>
+        </div>
+        <div class="use-item__image-container">
+          <img src="./images/how-to-use-1.jpg" 
+               alt="How to use image 1" 
+               class="use-item__image">
+        </div>
+      </div>
+
+
+      <div class="how-to-use__item use-item use-item--second">
+        <div class="use-item__image-container use-item__image-container--second">
+          <img src="./images/how-to-use-2.jpg" 
+          alt="How to use image 2" class="use-item__image">
+        </div>
+        <div class="use-item__info use-item__info--second">
+          <h4 class="subtitle">ConsectUltricies</h4>
+          <h2 class="subtitle subtitle--bold">Amet Ipsum</h2>
+          <p class="subtitle subtitle--text">
+            Lorem ipsum dolor sit amet, consectetur <br> 
+            adipiscing elit. Suspendisse varius enim in <br>
+            eros elementum tristique.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="how-to-use__item use-item">
+        <div class="use-item__info">
+          <h4 class="use-item__subtitle subtitle">
+            Aenean Consectetur Porta
+          </h4>
+          <h2 class="subtitle subtitle--bold">
+            Magna Porta Sit <br>
+            Bibendum
+          </h2>
+          <p class="subtitle subtitle--text">
+            Lorem ipsum dolor sit amet, consectetur <br> 
+            adipiscing elit. Suspendisse varius enim in <br>
+            eros elementum tristique.
+          </p>
+        </div>
+        <div class="use-item__image-container">
+          <img src="./images/how-to-use-3.jpg" 
+               alt="How to use image 3" 
+               class="use-item__image">
+        </div>
+      </div>
+    </section>
+
+    <section class="page__section features" id="features">
+      <div class="features__item">
+        <img src="./images/features-1.svg" class="features__icon"
+              alt="Activity Notifications">
+        <h5 class="features__title">Activity Notifications</h5>
+        <p class="features__text subtitle subtitle--text">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Suspendisse varius enim in eros elementum <br> tristique.</p>
+      </div>
+
+      <div class="features__item">
+        <img src="./images/features-2.svg" class="features__icon"
+              alt="Custom Timing">
+        <h5 class="features__title">Custom Timing</h5>
+        <p class="features__text subtitle subtitle--text">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Suspendisse varius enim in eros elementum <br> tristique.</p>
+      </div>
+
+      <div class="features__item">
+        <img src="./images/features-3.svg" class="features__icon"
+              alt="Mobile Optimized">
+        <h5 class="features__title">Mobile Optimized</h5>
+        <p class="features__text subtitle subtitle--text">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Suspendisse varius enim in eros elementum <br> tristique.</p>
+      </div>
+    </section>
+
+    <div class="statistics page__section">
+      <div class="statistics__item">
+        <h2 class="statistics__title">+12k</h2>
+        <h4 class="statistics__subtitle">Nibh Elit Tristique</h4>
+      </div>
+
+      <div class="statistics__item">
+        <h2 class="statistics__title">84</h2>
+        <h4 class="statistics__subtitle">Aenean Condimentum</h4>
+      </div>
+
+      <div class="statistics__item">
+        <h2 class="statistics__title">3,07</h2>
+        <h4 class="statistics__subtitle">Quam Inceptos</h4>
+      </div>
+
+      <div class="statistics__item">
+        <h2 class="statistics__title">24h</h2>
+        <h4 class="statistics__subtitle">Ullamcorper</h4>
+      </div>
+    </div>
+
+    <section class="page__section about" id="about">
+      <div class="container">
+        <div class="about__item about-item">
+          <div class="about-item__info">
+            <h4 class="subtitle">Aenean Consectetur Porta</h4>
+            <h2 class="subtitle subtitle--bold">
+              Sem Risus Elit<br> 
+              Vestibulum
+            </h2>
+            <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
+              mollis, est non commodo luctus, nisi erat <br>
+              porttitor ligula, eget lacinia odio sem nec elit.<br> 
+              <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br>
+              fermentum. Donec id elit non mi porta <br>
+              gravida at eget metus. Etiam porta sem <br>
+              malesuada magna mollis euismod.
+            </p>
+          </div>
+  
+          <div class="about-item__image-container">
+            <img src="./images/about-1.jpg" 
+                 alt="Burgers" 
+                 class="about-item__image">
+          </div>
+        </div>
+  
+        <div class="about__item about-item">
+          <div class="about-item__image-container about-item__image-container--second">
+            <img src="./images/about-2.jpg"
+                 alt="Sandwich" 
+                 class="about-item__image">
+          </div>
+          <div class="about-item__info about-item__info--second">
+            <h4 class="subtitle">Aenean Consectetur Porta</h4>
+            <h2 class="subtitle subtitle--bold">
+              Parturient Tortor
+            </h2>
+            <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
+              mollis, est non commodo luctus, nisi erat <br>
+              porttitor ligula, eget lacinia odio sem nec elit.<br> 
+              <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br> 
+              fermentum. Donec id elit non mi porta <br>
+              gravida at eget metus. Etiam porta sem <br>
+              malesuada magna mollis euismod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page__quote quote">
+      <div class="container">
+        <img src="./images/quotes.svg" 
+           alt="Quote" 
+           class="quote__image">
+
+        <p class="quote__text">
+          HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est <br>
+          non commodo luctus, nisi erat porttitor ligula, eget lacinia odio <br>
+          sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta <br>
+          gravida at eget metus. Etiam porta sem malesuada magna <br>
+          mollis euismod.ing
+        </p>
+        <h6 class="quote__sourse">
+          Joshua Home - New York Times
+        </h6>
+      </div>
+    </div>
+
+    <div class="page__partners partners">
+      <a href="https://webflow.com/"
+         target="_blank"
+         class="partners__logo-container">
+        <img src="./images/webflow-logo.png" alt="Webflow"
+             class="partners__logo">
+      </a>
+      <a href="https://www.ubereats.com/"
+         target="_blank"
+         class="partners__logo-container">
+        <img src="images/uber-eats.svg" alt="Uber eats"
+             class="partners__logo">
+      </a>
+      <a href="https://www.producthunt.com/"
+         target="_blank"
+         class="partners__logo-container">
+        <img src="images/product-hunt-logo.png" alt="Product Hunt"
+             class="partners__logo">
+      </a>
+      <a href="https://www.microsoft.com/uk-ua"
+         target="_blank"
+         class="partners__logo-container">
+        <img src="images/microsoft-logo.png" alt="Microsoft"
+             class="partners__logo">
+      </a>
+      <a href="https://bitcoin.org/uk/"
+         target="_blank"
+         class="partners__logo-container">
+        <img src="images/bitcoin-logo.png" alt="Bitcoin"
+             class="partners__logo">
+      </a>
+    </div>
+
+    <img src="./images/bottom-image.png" alt="Bottom image" 
+         class="bottom-image">
+
+    <section class="ready-start" id="download">
+      <div class="container">
+        <div class="ready-start__content">
+          <h2 class="ready-start__title subtitle subtitle--bold subtitle--white">Ready to get started?</h2>
+          <div class="ready-start__buttons">
+            <a href="#" class="ready-start__download button">Download Now</a>
+            <a href="#" class="ready-start__get-in-touch button">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__content">
+          <h2 class="subtitle subtitle--bold subtitle--white">
+          Get updates from Richard
+          </h2>
+          <p class="contact-us__text subtitle subtitle--text">
+            New course alerts, discounts and free lessons
+          </p>
+          <form action="#" class="contact-us__form">
+            <input autocomplete = "off" 
+                   type="email" 
+                   required name="form[]" 
+                   placeholder = "Enter your email" 
+                   class="contact-us__input">
+            <button type="submit" class="contact-us__button">Subscribe</button>
+          </form>
+        </div>
+      </div>  
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <img src="./images/footer-logo.svg" 
+             alt="Logo" 
+             class="footer__logo">
+        <div class="footer__social-medias social-media">
+          <a href="#" class="social-media__item">
+            Email
+          </a>
+          <a href="#" class="social-media__item">
+            Instagram
+          </a>
+          <a href="#" class="social-media__item">
+            Facebook
+          </a>
+          <a href="#" class="social-media__item">
+            Twitter
+          </a>
+          <a href="#" class="social-media__item">
+            Image License Info
+          </a>
+          <a href="#" class="social-media__item">
+            Powered by Webflow
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

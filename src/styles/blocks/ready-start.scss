@@ -1,0 +1,64 @@
+.ready-start {
+  background: linear-gradient(287.15deg, #450e4b 0%, 
+  #3c0c41 24.48%, rgba(207, 0, 99, 0) 100%),
+    linear-gradient(0deg, #cf0063, #cf0063);
+  width: 100vw;
+
+  &__content {
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onMobile {
+      height: 400px;
+    }
+
+    @include onSmallScreen {
+      height: 300px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 200px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__buttons {
+    display: flex;
+
+    @include onSmallScreen {
+      display: block;
+    }
+
+    @include onSuperSmallScreen {
+      display: block;
+    }
+  }
+
+  &__download {
+    margin-right: 10px;
+
+    @include onDesktop {
+      width: 190px;
+    }
+
+    @include onSmallScreen {
+      margin: 0 -10px 10px 0;
+    }
+
+    @include onSuperSmallScreen {
+      margin: 0 -10px 10px 0;
+    }
+  }
+
+  &__get-in-touch {
+    background-color: transparent;
+    border: 0.5px solid #91728c;
+  }
+}

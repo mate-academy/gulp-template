@@ -1,0 +1,88 @@
+.page {
+  font-family: "Gothic A1", sans-serif;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  &__orders {
+    margin-bottom: 80px;
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 160px;
+
+    @include onMobile {
+      margin-bottom: 100px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 100px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__quote {
+    margin-bottom: 130px;
+
+    @include onMobile {
+      margin-bottom: 90px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 80px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__partners {
+    margin-bottom: 120px;
+
+    @include onMobile {
+      margin-bottom: 80px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+    @include onSuperSmallScreen {
+      margin-bottom: 30px;
+    }
+  }
+}

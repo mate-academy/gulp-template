@@ -1,0 +1,17 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 130px;
+
+  @include onMobile {
+    padding: 0 80px;
+  }
+
+  @include onSmallScreen {
+    padding: 0 80px;
+  }
+
+  @include onSuperSmallScreen {
+    padding: 0 20px;
+  }
+}

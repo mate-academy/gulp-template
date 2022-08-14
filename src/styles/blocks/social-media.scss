@@ -1,0 +1,54 @@
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include onMobile {
+    width: max-content;
+  }
+
+  &__item {
+    display: block;
+    
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 181%;
+    text-decoration: none;
+    color: #6b6b6b;
+    white-space: nowrap;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onMobile {
+      font-size: 15px;
+    }
+
+    @include onSmallScreen {
+      padding: 8px 6px;
+    }
+
+    @include onSuperSmallScreen {
+      padding: 6px 4px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+
+    @include onMobile {
+      margin-right: 25px;
+    }
+
+    @include onSmallScreen {
+      margin-right: 0;
+    }
+
+    @include onSuperSmallScreen {
+      margin-right: 0;
+    }
+  }
+}

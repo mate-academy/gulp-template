@@ -1,0 +1,31 @@
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  &__logo-container {
+    height: 35px;
+    padding: 8px 15px;
+    text-align: center;
+
+    flex: 0 1 16.67%;
+    width: max-content;
+
+    @include onMobile {
+      height: 30px;
+    }
+
+    @include onSmallScreen {
+      height: 20px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 20px;
+    }
+  }
+
+  &__logo {
+    height: 100%;
+  }
+}

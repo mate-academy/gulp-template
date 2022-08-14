@@ -1,0 +1,33 @@
+.button {
+  height: 65px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $color-pink;
+
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  cursor: pointer;
+
+  @include onMobile {
+    font-size: 17px;
+  }
+
+  @include onSmallScreen {
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  @include onSuperSmallScreen {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+}

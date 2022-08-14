@@ -1,0 +1,40 @@
+.side-menu {
+  display: none;
+  background-color: $color-pink;
+
+  @include onSuperSmallScreen {
+    display: block;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: $header-top-padding 0;
+  }
+
+  &__top-actions {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 0 48px;
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  &__link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: inherit;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}

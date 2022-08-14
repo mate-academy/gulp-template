@@ -1,0 +1,82 @@
+.subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 166%;
+  letter-spacing: 2px;
+  color: #a8a8a8;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include onDesktop {
+    font-size: 17px;
+  }
+
+  @include onSmallScreen {
+    margin-bottom: 12px;
+    font-size: 9px;
+  }
+
+  @include onSuperSmallScreen {
+    margin-bottom: 12px;
+    font-size: 7px;
+  }
+
+  &--bold {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 126%;
+    letter-spacing: 0;
+    color: #000;
+    white-space: nowrap;
+    text-transform: none;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include onMobile {
+      font-size: 25px;
+    }
+
+    @include onSmallScreen {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &--text {
+    font-size: 16px;
+    line-height: 187%;
+    color: #6b6b6b;
+    white-space: nowrap;
+
+    text-transform: none;
+    margin: 0;
+    letter-spacing: 0;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
+
+    @include onMobile {
+      font-size: 14px;
+    }
+
+    @include onSmallScreen {
+      font-size: 13px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 11px;
+    }
+  }
+
+  &--white {
+    text-transform: none;
+    color: #fff;
+  }
+}

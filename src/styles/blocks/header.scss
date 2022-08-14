@@ -1,0 +1,195 @@
+.header {
+  background: linear-gradient(287.15deg, #450e4b 0%, 
+  #3c0c41 24.48%, rgba(207, 0, 99, 0) 100%),
+    linear-gradient(0deg, #cf0063, #cf0063);
+  width: 100vw;
+  
+
+  &__content {
+    overflow: hidden;
+    height: max-content;
+    padding: $header-top-padding 0 0;
+
+    @include onDesktop {
+      padding: 20px 0;
+    }
+    
+    @include onSmallScreen {
+      padding: 15px 0;
+    }
+
+    @include onSuperSmallScreen {
+      padding: 15px 0;
+    }
+  }
+
+  &__top-actions {
+    margin-bottom: 80px;
+    
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+
+  @include onSuperSmallScreen {
+    justify-content: flex-start;
+  }
+
+  &--side-menu {
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+
+  @include onSuperSmallScreen {
+    display: none;
+  }
+  
+  &__item {
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+
+    @include onSmallScreen {
+      margin-right: 12px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-right: 12px;
+    }
+  }
+
+  &__item-link {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 125%;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+
+    @include onSmallScreen {
+      font-size: 12px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 12px;
+    }
+  }
+}
+
+.header-main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include onSmallScreen {
+    display: grid;
+    justify-items: center;
+  }
+
+  @include onSuperSmallScreen {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__user {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+
+    @include onSmallScreen {
+      margin-bottom: 30px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__title {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @include onMobile {
+      font-size: 50px;
+    }
+
+    @include onSmallScreen {
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__subtitle {
+    width: 100%;
+    font-size: 30px;
+    line-height: 146%;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 25px;
+
+    @include onMobile {
+      font-size: 20px;
+    }
+  
+    @include onSmallScreen {
+      font-size: 17px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 13px;
+    }
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 650px;
+    
+    @include onDesktop {
+      max-width: 1600px;
+    }
+
+    @include onMobile {
+      height: 400px;
+    }
+
+    @include onSmallScreen {
+      height: 350px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 250px;
+    }
+  }
+}

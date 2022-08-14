@@ -1,0 +1,18 @@
+.bottom-image {
+  display: block;
+  width: 100vw;
+  object-fit: cover;
+  height: 520px;
+
+  @include onMobile {
+    height: 300px;
+  }
+
+  @include onSmallScreen {
+    height: 200px;
+  }
+
+  @include onSuperSmallScreen {
+    height: 150px;
+  }
+}

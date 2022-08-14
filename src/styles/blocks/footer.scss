@@ -1,0 +1,49 @@
+.footer {
+  background-color: #1b1b1b;
+  width: 100vw;
+  display: block;
+  flex-direction: column;
+
+  &__content {
+    height: 240px;
+    padding: 20px 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onMobile {
+      height: 150px;
+      padding: 20px 0 50px;
+    }
+
+    @include onSmallScreen {
+      height: 100px;
+      padding: 20px 0 40px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 100px;
+      padding: 20px 0 30px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+
+    @include onMobile {
+      height: 90px;
+    }
+
+    @include onSmallScreen {
+      height: 50px;
+      margin-bottom: 20px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+  }
+}

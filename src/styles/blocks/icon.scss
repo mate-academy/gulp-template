@@ -1,0 +1,22 @@
+.icon {
+  display: none;
+  height: 15px;
+  width: 15px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--menu {
+    background-image: url(../images/icons/menu.svg);
+
+    @include onSuperSmallScreen {
+      display: block;
+    }
+  }
+
+  &--cross {
+    display: block;
+    background-image: url(../images/icons/cross.svg);
+  }
+}

@@ -1,0 +1,95 @@
+.features {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 100px;
+
+  @include onMobile {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 50% auto;
+    justify-items: center;
+  }
+
+  @include onSmallScreen {
+    display: block;
+    padding: 0 50px;
+  }
+
+  @include onSuperSmallScreen {
+    display: block;
+    padding: 0 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+
+    @include onMobile {
+      margin: 0;
+    }
+
+    @include onSmallScreen {
+      margin: 0 0 60px;
+    }
+
+    @include onSuperSmallScreen {
+      margin: 0 0 50px;
+    }
+  }
+
+  &__item:nth-child(-n+2) {
+    @include onMobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 40px;
+
+    @include onMobile {
+      height: 25px;
+      margin-bottom: 30px;
+    }
+
+    @include onSmallScreen {
+      height: 20px;
+      margin-bottom: 30px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 23px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 133%;
+    color: #000;
+    margin: 0;
+    margin-bottom: 17px;
+
+    @include onSmallScreen {
+      font-size: 15px;
+    }
+
+    @include onSuperSmallScreen {
+      font-size: 15px;
+    }
+  }
+
+  &__text {
+    @include onDesktop {
+      white-space: nowrap;
+    }
+  }
+}

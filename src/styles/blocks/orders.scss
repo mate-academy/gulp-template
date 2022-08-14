@@ -1,0 +1,72 @@
+.orders {
+  background-color: #1b1b1b;
+  width: 100vw;
+
+  &__container {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto auto 90%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+    box-sizing: border-box;
+    padding-top: 100px;
+
+    @include onMobile {
+      padding-top: 50px;
+    }
+
+    @include onSmallScreen {
+      padding-top: 30px;
+    }
+
+    @include onSuperSmallScreen {
+      padding-top: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 126%;
+    color: #fff;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      margin-bottom: 55px;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+    }
+
+    @include onSmallScreen {
+      font-size: 17px;
+    }
+  }
+  
+  &__container-image {
+    width: 100%;
+    height: 656px;
+
+    @include onMobile {
+      height: 300px;
+    }
+
+    @include onSmallScreen {
+      height: 200px;
+    }
+
+    @include onSuperSmallScreen {
+      height: 150px;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 100%;
+  }
+}
