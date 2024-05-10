@@ -1,13 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua" class="page">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megogo</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/63/MEGOGO_icon.svg">
+    <link rel="stylesheet" href="./styles/main.scss" />
   </head>
-  <body>
-    <h1>Landing Page</h1>
+
+  <body class="name">
+    <div class="page__container">
+      <section class="page__section first-page">
+        <div class="container">
+          <div class="first-page__content">
+            <div class="first-page__top">
+              <a href="#menu" class="icon icon__menu-opener"></a>
+            </div>
+            <div class="first-page__title">
+              <h1 class="page__section--title-main">
+                Дивіться ТБ та кіно без реклами в єдиній передплаті
+              </h1>
+              <p class="page__section--text">
+                Популярні телеканали та величезна бібліотека фільмів, серіалів,
+                мультфільмів, трансляцій у єдиній передплаті.
+              </p>
+            </div>
+            <div class="first-page__bottom">
+              <a href="#downloading" class="icon icon__bottom"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section downloading" id="downloading">
+        <div class="container">
+          <div class="downloading__content">
+            <h2 class="page__section--title">Дивіться фільми без інтернету</h2>
+            <p class="page__section--text">
+              Завантаження фільмів та серіалів на ваш пристрій.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section subscription">
+        <div class="container">
+          <div class="subscription__content">
+            <div class="subscription__top">
+              <p class="subscription__top--text">
+                Передплата
+              </p>
+              <h3 class="subscription__top--name">
+                Оптимальна
+              </h3>
+            </div>
+
+            <div class="subscription__main-text">
+              <h1 class="page__section--title-main">
+                10000 фільмів та 160+ каналів
+              </h1>
+              <p class="page__section--text">
+                Голлівудська класика та свіжі кіно-новинки за підпискою, прямі
+                футбольні трансляції та понад 160 каналів
+              </p>
+            </div>
+
+            <div class="subscription__details">
+              <h3 class="subscription__details--price">
+                від 1 ГРН
+              </h3>
+              <button class="subscription__details--button button">
+                Спробувати
+              </button>
+              <p class="subscription__details--conditions">
+                Перші 14 днів за 1 грн,
+              </br>
+                 далі – 97 грн/міс.
+              </p>
+              <a href="#tariff-optimal" class="subscription__details--link">
+                Детальніше
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section partners">
+        <div class="container">
+          <div class="partners__content">
+            <h2 class="page__section--title">
+              Подарунки від партнерів при кожному продовженні передплати
+            </h2>
+            <p class="page__section--text">
+              Сертифікати на знижки від WOG, Сушія, Антошка, Єва та ін.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tariff-optimal" class="page__section connection">
+        <div class="container">
+          <div class="connection__content">
+            <h2 class="page__section--title connection__title">
+              Підключіть передплату за 1 грн та отримуйте:
+            </h2>
+            <ul class="connection__list">
+              <div class="connection__list--left">
+                <li class="connection__item">
+                  <h3 class="connection__text connection__text--title">
+                    ТВ-архів
+                  </h3>
+                  <p class="connection__text connection__text--description">
+                    телепередач до 14 днів
+                  </p>
+                </li>
+                <li class="connection__item">
+                  <h3 class="connection__text connection__text--title">
+                    10% знижка
+                  </h3>
+                  <p class="connection__text connection__text--description">
+                    на прем'єри
+                  </p>
+                </li>
+                <li class="connection__item">
+                  <h3 class="connection__text connection__text--title">
+                    Без реклами
+                  </h3>
+                  <p class="connection__text connection__text--description">
+                    на всіх фільмах та мультфільмах
+                  </p>
+                </li>
+              </div>
+
+              <div class="connection__list--right">
+                <li class="connection__item">
+                  <h3 class="connection__text connection__text--title">
+                    Full HD 
+                  </h3>
+                  <p class="connection__text connection__text--description">
+                    якість тільки за передплатою
+                  </p>
+                </li>
+                <li class="connection__item">
+                  <h3 class="connection__text connection__text--title">
+                    5 пристроїв 
+                  </h3>
+                  <p class="connection__text connection__text--description">
+                    в одній передплаті
+                  </p>
+                </li>
+              </div>
+            </ul>
+
+            <button class="connection--button button">
+              Підключити
+            </button>
+
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

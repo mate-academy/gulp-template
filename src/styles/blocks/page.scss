@@ -1,0 +1,76 @@
+.page {
+  font-family: SF UI Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: $white;
+
+  &__container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  &__section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    scroll-snap-align: start;
+    overflow: scroll;
+
+    &--title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      margin-bottom: 15px;
+   
+      @include onMobileM {
+        font-size: 26px;
+      }
+      @include onMobileL {
+        font-size: 28px;
+      }
+      @include onDescktop {
+        font-size: 32px;
+      }
+    }
+
+    &--title-main {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42.96px;
+      margin-bottom: 10px;
+
+      @include onMobileM {
+        font-size: 38px;
+      }
+      @include onMobileL {
+        font-size: 40px;
+      }
+      @include onDescktop {
+        font-size: 44px;
+      }
+    }
+
+    &--text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+
+      @include onMobileM {
+        font-size: 16px;
+      }
+      @include onMobileL {
+        font-size: 18px;
+      }
+      @include onDescktop {
+        font-size: 20px;
+      }
+    }
+  }
+}

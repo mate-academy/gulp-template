@@ -1,0 +1,52 @@
+.icon {
+  display: block;
+  block-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__menu-opener {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/icons/menu.svg);
+
+    @include onMobileM {
+      width: 18px;
+      height: 16px;
+    }
+    @include onMobileL {
+      width: 20px;
+      height: 18px;
+    }
+    @include onDescktop {
+      width: 24px;
+      height: 20px;
+    }
+    
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  &__bottom {
+    width: 14px;
+    height: 7px;
+    background-image: url(../images/icons/vector.svg);
+
+    @include onMobileM {
+      width: 16px;
+      height: 8px;
+    }
+    @include onMobileL {
+      width: 18px;
+      height: 9px;
+    }
+    @include onDescktop {
+      width: 24px;
+      height: 12px;
+    }
+    
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

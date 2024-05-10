@@ -1,0 +1,17 @@
+.partners {
+  position: relative;
+  background-image: url(../images/partners.png);
+  background-repeat: no-repeat;
+  background-position: center 40vh;
+  position: relative;
+
+  &::after {
+    @include positionGradient;
+    background: linear-gradient(179.79deg, rgba(16, 16, 16, 0) 37.5%, #101010 90.39%);
+  }
+  &__content {
+    padding: 60px $inline-padding-mobile-s 0;
+
+    @include inlinePadding;
+  }
+}

@@ -1,0 +1,77 @@
+.subscription {
+  background-image: url(../images/groupFilms.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: 8px solid $green;
+
+  &::after {
+    @include positionGradient;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+
+  &__content {
+    padding: 40px $inline-padding-mobile-s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include inlinePadding;
+  }
+
+  &__top {
+    &--text {
+      font-size: 16px;
+      line-height: 22.4px;
+      letter-spacing: 0.5px;
+      padding-bottom: 5px;
+    }
+  
+    &--name {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.64px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__details {
+    &--price {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    
+    &--button {
+      margin-bottom: 10px;
+    }
+
+    &--conditions {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.32px;
+      letter-spacing: 0.83px;
+      margin-bottom: 20px;
+      color: #FFFFFF99;
+
+    }
+
+    &--link {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 13.13px;
+      letter-spacing: 1.3px;
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      
+      &:hover {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
