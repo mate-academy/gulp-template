@@ -1,3 +1,17 @@
-body {
-  margin: 0;
-}
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/mixins.scss";
+
+@import "./blocks/page";
+@import "./blocks/icon";
+@import "./blocks/reset";
+
+@import "./blocks/first-page";
+@import "./blocks/container";
+@import "./blocks/downloading";
+@import "./blocks/subscription";
+@import "./blocks/partners";
+@import "./blocks/connection";
+@import "./blocks/button";
+
+

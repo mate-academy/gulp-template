@@ -1,0 +1,20 @@
+.downloading {
+  position: relative;
+  background-image: url(../images/iPhone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 30vh;
+  position: relative;
+
+  &::after {
+    @include positionGradient;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px $inline-padding-mobile-s 0;
+    @include inlinePadding;
+  }
+}

@@ -1,0 +1,45 @@
+.connection {
+  &__content {
+    padding: 40px $inline-padding-mobile-s;
+
+    @include inlinePadding;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+
+    &--left {
+      margin-right: 15px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    &--title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23.87px;
+    }
+    &--description {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 17.9px;
+    }
+  }
+}

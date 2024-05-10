@@ -1,0 +1,41 @@
+
+@mixin onMobileM {
+  @media (min-width: 420px) {
+    @content;
+  }
+}
+
+@mixin onMobileL {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onDescktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin inlinePadding {
+  @include onMobileM {
+    padding-inline: $inline-padding-mobile-m;
+  }
+  @include onMobileL {
+    padding-inline: $inline-padding-mobile-l;
+  }
+  @include onDescktop {
+    padding-inline: $inline-padding-descktop;
+  }
+}
+
+
+@mixin positionGradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  pointer-events: none;
+}

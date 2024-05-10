@@ -1,0 +1,35 @@
+.first-page {
+  height: 100vh;
+  background-position: center;
+  background-image: url(../images/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onDescktop {
+    background-image: url(../images/people.jpg);
+  }
+
+  &::after {
+    @include positionGradient;
+    background: $black;
+    opacity: 0.5;
+  }
+
+  &__content {
+    margin: 15px 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-inline: 25px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+

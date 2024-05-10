@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0;
+  width: 200px;
+  height: 56px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: $green;
+  font-family: SF UI Display;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13.13px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+
+  @include onMobileM {
+    font-size: 13px;
+  }
+  @include onMobileL {
+    font-size: 14px;
+  }
+  @include onDescktop {
+    font-size: 16px;
+  }
+
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+    border: 2px solid $white
+  }
+
+  &:active {
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
+    border: 2px solid $green;
+    color: $green;
+    background-color: $white;
+  }
+}
