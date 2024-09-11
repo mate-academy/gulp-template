@@ -1,0 +1,26 @@
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    padding-bottom: 32px;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+
+    position: relative;
+  display: inline-block;
+  padding-bottom: 7px;
+  }
+}
+
+

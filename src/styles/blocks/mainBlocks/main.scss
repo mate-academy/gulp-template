@@ -1,0 +1,37 @@
+.main {
+  display: grid;
+  padding-block: 100px;
+  row-gap: 100px;
+  
+  @include content-padding-inline;
+
+  @media (min-width: $tablet-min-width) {
+    padding-block: 140px;
+    row-gap: 140px;
+  }
+}
+
+@import 'bemBlocks/sectionTitle';
+@import 'bemBlocks/button';
+@import 'bemBlocks/increase';
+@import 'bemBlocks/link';
+
+
+
+// shedule
+@import 'museumHours';
+
+
+// now-on-view
+@import 'nowOnView';
+
+
+// exploreOnline
+@import 'exploreOnline';
+
+
+// contacts
+@import 'contacts';
+
+
+

@@ -1,0 +1,41 @@
+.header {
+  height: 100vh;
+  background: center/cover no-repeat url(../images/the-met-bg.jpg);
+
+  &__content {
+    position: relative;
+    height: 50vh;
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+
+    @include on-tablet {
+      font-size: 64px;
+    }
+
+    @include on-desktop {
+      font-size: 80px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

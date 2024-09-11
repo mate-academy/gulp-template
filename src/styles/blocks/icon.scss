@@ -1,0 +1,45 @@
+.icon {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  background-size: cover;
+
+  @media (min-width: $tablet-min-width){
+    width: 32px;
+    height: 32px;
+  }
+
+  &--phone {
+    background-image: url(../images/icons/icon-phone-call.svg);
+    margin-left: 16px;
+  }
+
+  &--menu {
+    background-image: url(../images/icons/icon-burger-menu.svg);
+    margin-left: 24px;
+
+    @media (min-width: $tablet-min-width){
+      margin-left: 55px;
+    }
+  }
+
+  &--close {
+    background-image: url(../images/icons/icon-close.svg);
+  }
+}
+
+.phone-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:hover .phone-icon__menu {
+    display: block;
+  }
+}
+
+
+
+

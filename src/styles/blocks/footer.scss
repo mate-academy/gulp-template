@@ -1,0 +1,8 @@
+.footer {
+  height: 180px;
+  background: center / cover no-repeat url('/src/images/galaryPhoto/footerImg.jpg');
+
+  @media (min-width: $tablet-min-width) {
+    height: 359px;
+  }
+}

@@ -1,3 +1,10 @@
-body {
-  margin: 0;
-}
+@import 'blocks/variables';
+@import 'blocks/mixins';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/icon';
+@import 'blocks/mainBlocks/main';
+@import 'blocks/footer';
+

@@ -1,0 +1,41 @@
+.cards {
+  @include page-grid;
+  
+  row-gap: 48px;
+}
+
+.card {
+  grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 2 / 6;
+    }
+
+    @include on-desktop {
+      grid-column: span 4;
+    }
+
+  &__photo {
+    display: block;
+
+    margin: 0 auto;
+  }
+
+  &__text {
+    text-align: center;
+
+    &-title {
+      margin-top: 24px;
+
+      color: $red-text-color
+    }
+
+    &-description {
+      margin-top: 4px;
+
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+}

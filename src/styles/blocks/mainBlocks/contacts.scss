@@ -1,0 +1,113 @@
+.locations {
+  @include page-grid;
+
+  &__wrapper {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+      grid-auto-flow: column;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      display: grid;
+
+      $columns: 6;
+      
+      grid-template-columns: repeat($columns, 1fr);
+      column-gap: 20px;
+    }
+  }
+}
+
+.location {
+  margin-bottom: 48px;
+
+  @include  on-desktop {
+    grid-column: span 3;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  &__items {
+    margin-top: 8px;
+
+    &-caption {
+      font-size: 14px;
+      line-height: 27px;
+      font-weight: 400;
+    }
+
+    &-link {
+      font-weight: 700;
+      color: #3E3E3E;
+
+      @include hover(color, #000);
+    }
+  }
+}
+
+.inputs {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 4 / -1;
+  }
+
+  @include on-desktop {
+    grid-column: -6 / -1;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    padding: 14px 11px;
+    margin-bottom: 16px;
+
+    color: $text-color-general;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    background-color: #f8f8fa;
+
+    &::placeholder {
+      font-family: Cinzel, serif;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7e7e83;
+    }
+
+    &:hover::placeholder {
+      color: $text-color-general;
+    }
+
+    &:focus {
+      border: 1px solid $text-color-general;
+      color: $text-color-general;
+    }
+  }
+
+  &__one-line {
+    height: 48px;
+  }
+
+  &__multi-line {
+    height: 144px;
+  }
+
+  &__button {
+    margin-top: 16px;
+  }
+}
+
+
